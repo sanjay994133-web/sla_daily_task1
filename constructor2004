@@ -1,0 +1,27 @@
+package constructor;
+
+public class Employeedetails {
+ String name;
+ int age;
+ String gender;
+ 
+
+ public Employeedetails(String name, int age, String gender) {
+     this.name = name;
+     this.age = age;
+     this.gender = gender;
+ }
+
+ public void printDetails() {
+     System.out.println("Name: " + name);
+     System.out.println("Age: " + age);
+     System.out.println("Gender: " + gender);
+ }
+
+ public static void main(String[] args) {
+     Employeedetails empd = new Employeedetails("sanjay", 21, "male");
+
+     empd.printDetails();
+ }
+}
+
