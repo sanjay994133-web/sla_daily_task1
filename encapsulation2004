@@ -1,0 +1,49 @@
+package encapsulation;
+
+
+public class Shopping {
+	
+    private String productName;
+    private int productQty;
+    private double productPrice;
+    
+
+    public String getProductName() {
+        return productName;
+    }
+
+    public void setProductName(String productName) {
+        this.productName = productName;
+    }
+
+    public int getProductQty() {
+        return productQty;
+    }
+
+    public void setProductQty(int productQty) {
+        this.productQty = productQty;
+    }
+
+    public double getProductPrice() {
+        return productPrice;
+    }
+
+    public void setProductPrice(double productPrice) {
+        this.productPrice = productPrice;
+    }
+
+public static class Main {
+    public static void main(String[] args) {
+        Shopping item = new Shopping();
+
+        item.setProductName("Laptop");
+        item.setProductQty(5);
+        item.setProductPrice(300000);
+
+        System.out.println("Product Name: " + item.getProductName());
+        System.out.println("Quantity: " + item.getProductQty());
+        System.out.println("Price: Rs " + item.getProductPrice());
+    }
+}
+
+}
